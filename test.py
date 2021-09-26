@@ -10,7 +10,7 @@ def wrt_msg(peer_id, message):
     vk.method('messages.send', {'peer_id': event.peer_id, 'message': message, 'random_id': 0})
 
 async def ping(peer_id):
-	await asyncio.sleep(0.4)
+	await asyncio.sleep(0)
 	if event.text.lower() == '!ping':
 		wrt_msg(peer_id, 'pong')
 
